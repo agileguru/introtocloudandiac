@@ -43,6 +43,9 @@ module "common_load_balancer" {
   bucket_backend_name = "dev-agile-guru-org-backend"
   bucket_name         = "${var.project}-dev-agileguru-org"
   lb_project_id       = var.project
+  depends_on = [
+    module.development_site
+  ]
 }
 
 module "akshay_load_balancer" {
@@ -51,4 +54,7 @@ module "akshay_load_balancer" {
   bucket_backend_name = "akshay-agile-guru-org-backend"
   bucket_name         = "${var.project}-akshay-agileguru-org"
   lb_project_id       = var.project
+  depends_on = [
+    module.akshay_site
+  ]
 }

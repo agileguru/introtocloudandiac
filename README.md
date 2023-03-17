@@ -13,6 +13,7 @@ This Repo is part of the [https://www.youtube.com/@agileguru](https://www.youtub
 ## How to guide 
 
 * Clone the code and make introtocloudandiac as your present working directory. 
+* Edit the variables.tf file and change the project name from devops-353009 to a valid one. 
 * Execute the command 
 
     ```
